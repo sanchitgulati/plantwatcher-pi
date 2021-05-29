@@ -28,7 +28,7 @@ try:
         else:
             print("Plant is doing fine")
             content="{\"sensor\":false}"
-        s3.Object('jion-public', "sensor"+str(sensorPin)+".json").put(Body=content)
+        s3.Object('jion-public', "sensor"+str(sensorPin)+".json").put(Body=content,ACL='public-read')
         time.sleep(60*60) #once every hour
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     GPIO.cleanup() # cleanup all GPIO
