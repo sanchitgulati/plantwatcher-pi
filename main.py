@@ -17,7 +17,8 @@ s3 = boto3.resource(
     aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
     aws_secret_access_key=os.environ.get('AWS_SECRET_KEY'),
 )
-
+lastUploadedStatus = None
+content=""
 print("Here we go! Press CTRL+C to exit")
 try:
     while 1:
@@ -28,7 +29,10 @@ try:
         else:
             print("Plant is doing fine")
             content="{\"sensor\":false}"
-        s3.Object('jion-public', "sensor"+str(sensorPin)+".json").put(Body=content,ACL='public-read')
-        time.sleep(60*60) #once every hour
+        
+        if(lastUploadedStatus != status):
+            lastUploadedStatus = status
+            s3.Object('jion-public', "sensor"+str(sensorPin)+".json").put(Body=content,ACL='public-read')
+        time.sleep(1) #once 1 second
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     GPIO.cleanup() # cleanup all GPIO
