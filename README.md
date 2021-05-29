@@ -10,15 +10,14 @@ Additionally, automate the script to send me a social media message to water the
 Log data, so we can create fancy charts with it.
 
 Sensor  
-![image](https://user-images.githubusercontent.com/2760236/120076236-d1aede80-c0a4-11eb-92af-30ab9102c920.png =250x)
-
+<img src="https://user-images.githubusercontent.com/2760236/120076236-d1aede80-c0a4-11eb-92af-30ab9102c920.png" width="512">  
 
 Test Bench  
-![image](https://user-images.githubusercontent.com/2760236/120076259-ec815300-c0a4-11eb-9243-44103770ed3e.png =250x)
+
+<img src="https://user-images.githubusercontent.com/2760236/120076259-ec815300-c0a4-11eb-9243-44103770ed3e.png" width="512">
 
 Example Log (for Now)  
-![image](https://user-images.githubusercontent.com/2760236/120076263-f99e4200-c0a4-11eb-97af-d185bfdd3f94.png =250x)
-
+<img src="https://user-images.githubusercontent.com/2760236/120076263-f99e4200-c0a4-11eb-97af-d185bfdd3f94.png" width="512">
 
 Random Photos  
-![image](https://user-images.githubusercontent.com/2760236/120076247-dffcfa80-c0a4-11eb-93bb-29e6a86158f8.png =250x)
+<img src="https://user-images.githubusercontent.com/2760236/120076247-dffcfa80-c0a4-11eb-93bb-29e6a86158f8.png" width="512">
